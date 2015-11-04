@@ -1,8 +1,3 @@
-" Use the Solarized Dark theme
-set background=dark
-colorscheme solarized
-let g:solarized_termtrans=1
-
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
@@ -24,12 +19,6 @@ let mapleader=","
 " Don’t add empty newlines at the end of files
 set binary
 set noeol
-" Centralize backups, swapfiles and undo history
-set backupdir=~/.vim/backups
-set directory=~/.vim/swaps
-if exists("&undodir")
-	set undodir=~/.vim/undo
-endif
 
 " Don’t create backups when editing files in certain directories
 set backupskip=/tmp/*,/private/tmp/*
@@ -41,7 +30,7 @@ set modelines=4
 set exrc
 set secure
 " Enable line numbers
-set number
+" set number
 " Enable syntax highlighting
 syntax on
 " Highlight current line
@@ -60,7 +49,7 @@ set incsearch
 " Always show status line
 set laststatus=2
 " Enable mouse in all modes
-set mouse=a
+" set mouse=a
 " Disable error bells
 set noerrorbells
 " Don’t reset cursor to start of line when moving around.
@@ -76,12 +65,12 @@ set title
 " Show the (partial) command as it’s being typed
 set showcmd
 " Use relative line numbers
-if exists("&relativenumber")
-	set relativenumber
-	au BufReadPost * set relativenumber
-endif
+" if exists("&relativenumber")
+" 	set relativenumber
+"	au BufReadPost * set relativenumber
+" endif
 " Start scrolling three lines before the horizontal window border
-set scrolloff=3
+" set scrolloff=3
 
 " Strip trailing whitespace (,ss)
 function! StripWhitespace()
