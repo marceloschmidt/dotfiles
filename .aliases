@@ -58,6 +58,7 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # Development
 alias ssh='ssh -o ServerAliveInterval=30'
 alias tailf='tail -f'
+alias docker-setup='eval "$(docker-machine env default)"'
 alias tdbdev='ssh -f -L 27018:localhost:27017 -N root@dev-my.konecty.com -q'
 alias tdbprod='ssh -f -L 27019:localhost:27017 -N root@001-db.konecty.com -q'
 alias tdbrocket='ssh -f -L 27020:localhost:27017 -N root@rocket.chat -q'
