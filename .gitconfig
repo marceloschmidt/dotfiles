@@ -1,6 +1,10 @@
 [user]
 	email = marcelo.schmidt@gmail.com
 	name = Marcelo Schmidt
+	signingkey = 7B66097E
+
+[commit]
+	gpgsign = true
 
 [alias]
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
@@ -42,6 +46,9 @@
 	# Remove branches that have already been merged with master
 	# a.k.a. ‘delete merged’
 	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+
+	# Fetch and prune
+	fp = fetch --prune origin +refs/tags/*:refs/tags/*
 
 [apply]
 
