@@ -9,6 +9,7 @@ alias g="git"
 alias h="history"
 alias m="meteor"
 alias hg="history | grep -i"
+alias psg="ps -ax | grep -i"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
