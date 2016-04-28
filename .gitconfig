@@ -1,7 +1,7 @@
 [user]
 	email = marcelo.schmidt@gmail.com
 	name = Marcelo Schmidt
-	signingkey = A4A4D216
+	signingkey = 7B66097E
 
 [commit]
 	gpgsign = true
