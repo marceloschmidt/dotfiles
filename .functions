@@ -101,6 +101,16 @@ function s() {
 	fi;
 }
 
+# `st` with no arguments opens the current directory in SourceTree, otherwise
+# opens the given location
+function st() {
+	if [ $# -eq 0 ]; then
+		open -a SourceTree .;
+	else
+		open -a SourceTree "$@";
+	fi;
+}
+
 # `v` with no arguments opens the current directory in Vim, otherwise opens the
 # given location
 function v() {
