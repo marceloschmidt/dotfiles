@@ -80,3 +80,5 @@ alias tunnels='tdbprod && tdbdev && tdbrocket && tdbdeploys'
 
 # Apps
 alias chrome-clean='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-extensions'
+
+alias updatedb='sudo /usr/libexec/locate.updatedb'
