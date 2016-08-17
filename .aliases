@@ -61,6 +61,7 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # Development
 alias ssh='ssh -o ServerAliveInterval=30'
 alias tailf='tail -f'
+alias docker-start='docker-machine start default && eval "$(docker-machine env default)"'
 alias docker-setup='eval "$(docker-machine env default)"'
 alias tdbdev='ssh -f -L 27018:localhost:27017 -N root@dev-my.konecty.com -q'
 alias tdbprod='ssh -f -L 27019:localhost:27017 -N root@001-db.konecty.com -q'
@@ -81,5 +82,5 @@ alias tunnels='tdbprod && tdbdev && tdbrocket && tdbdeploys'
 
 # Apps
 alias chrome-clean='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-extensions'
-
+alias iterm='/Applications/iTerm.app/Contents/MacOS/iTerm2 --launch_shell'
 alias updatedb='sudo /usr/libexec/locate.updatedb'
