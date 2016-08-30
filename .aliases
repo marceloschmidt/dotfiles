@@ -77,7 +77,7 @@ alias prod='ssh root@001-db.konecty.com'
 alias rocket='ssh root@rocket.chat -t '\''cd /var/www/rocket.chat/current; bash'\'''
 alias sites='ssh root@001-sites.konecty.com -t '\''cd /var/www/vhosts; bash'\'''
 alias deploysdb='ssh root@162.242.251.154'
-alias deploys='ssh root@104.130.19.129'
+alias deploys='ssh root@23.253.157.154'
 alias tunnels='tdbprod && tdbdev && tdbrocket && tdbdeploys'
 
 # Apps
