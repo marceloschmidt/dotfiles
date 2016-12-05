@@ -10,6 +10,7 @@ alias h="history"
 alias m="meteor"
 alias hg="history | grep -i"
 alias psg="ps -ax | grep -i"
+alias tailf='tail -f'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -59,7 +60,6 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 alias ssh='ssh -o ServerAliveInterval=30'
-alias tailf='tail -f'
 alias docker-start='docker-machine start default && eval "$(docker-machine env default)"'
 alias docker-setup='eval "$(docker-machine env default)"'
 
@@ -79,8 +79,7 @@ alias dev='ssh root@dev-my.konecty.com'
 alias prod='ssh root@001-db.konecty.com'
 alias rocket='ssh root@rocket.chat -t '\''cd /var/www/rocket.chat/current; bash'\'''
 alias sites='ssh root@001-sites.konecty.com -t '\''cd /var/www/vhosts; bash'\'''
-alias deploysdb='ssh root@162.242.251.154'
-alias deploys='ssh root@23.253.157.154'
+alias cloud='ssh root@162.242.251.154'
 
 # Apps
 alias chrome-clean='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-extensions'
