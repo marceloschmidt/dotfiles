@@ -109,4 +109,4 @@ fi
 ###-end-npm-completion-###
 
 # Add my ssh-key to keychain
-ssh-add -K ~/.ssh/id_rsa
+ssh-add -K ~/.ssh/id_rsa &>/dev/null
