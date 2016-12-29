@@ -18,6 +18,8 @@ export HISTFILESIZE="${HISTSIZE}";
 # Omit duplicates and commands that begin with a space from history.
 export HISTCONTROL='ignoreboth';
 
+# Ignore these history commands
+export HISTIGNORE='ls:ll:l:h:history:hg:s'
 
 # Prefer US English and use UTF-8.
 export LANG='en_US.UTF-8';

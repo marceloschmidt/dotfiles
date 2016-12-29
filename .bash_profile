@@ -108,5 +108,5 @@ elif type compctl &>/dev/null; then
 fi
 ###-end-npm-completion-###
 
-# Setup docker
-eval "$(docker-machine env default 2> /dev/null)"
+# Add my ssh-key to keychain
+ssh-add -K ~/.ssh/id_rsa
