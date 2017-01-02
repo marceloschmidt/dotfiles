@@ -3,13 +3,14 @@
 	name = Marcelo Schmidt
 	signingkey = 7B66097E
 
-[commit]
-	gpgsign = true
+[core]
+	editor = vim
 
-[gpg]
-	program = /usr/local/bin/gpg_wrap
+[push]
+	default = simple
 
 [alias]
+
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
 
@@ -109,33 +110,6 @@
 	changed = green
 	untracked = cyan
 
-[diff]
-
-	# Detect copies as well as renames
-	renames = copies
-
-[diff "bin"]
-	# Use `hexdump` to diff binary files
-	textconv = hexdump -v -C
-
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
-
-[help]
-
-	# Automatically correct and execute mistyped commands
-	autocorrect = 1
-
-[merge]
-
-	# Include summaries of merged commits in newly created merge commit messages
-	# log = true
-
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-
 [push]
 
 	# Use the Git 1.x.x default to avoid errors on machines with old Git
@@ -145,24 +119,5 @@
 	# Make `git push` push relevant annotated tags when pushing branches out.
 	followTags = true
 
-# URL shorthands
-
-[url "git@github.com:"]
-
-	insteadOf = "gh:"
-	pushInsteadOf = "github:"
-	pushInsteadOf = "git://github.com/"
-
-[url "git://github.com/"]
-
-	insteadOf = "github:"
-
-[url "git@gist.github.com:"]
-
-	insteadOf = "gst:"
-	pushInsteadOf = "gist:"
-	pushInsteadOf = "git://gist.github.com/"
-
-[url "git://gist.github.com/"]
-
-	insteadOf = "gist:"
+[commit]
+	gpgsign = true

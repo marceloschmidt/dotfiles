@@ -1,0 +1,41 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"Base16 Color Schemes",
+		"Better CoffeeScript",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"Colorsublime",
+		"Emmet",
+		"FileDiffs",
+		"Git",
+		"GitGutter",
+		"HTML-CSS-JS Prettify",
+		"JoinLinesEnhanced",
+		"LESS",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"Numix Theme",
+		"Package Control",
+		"SideBarEnhancements",
+		"SmartMarkdown",
+		"sublime-github",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
+		"Text Pastry",
+		"Theme - Brogrammer",
+		"Theme - Freesia",
+		"Theme - Glacier",
+		"Theme - Nexus",
+		"Theme - Numix",
+		"Theme - Soda",
+		"Theme - Soda SolarizedDark",
+		"Theme - Sodarized",
+		"Theme - Spacegray"
+	]
+}

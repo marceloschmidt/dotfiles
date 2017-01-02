@@ -1,0 +1,16 @@
+{
+  "html": {
+    "indent_char": "\t",
+    "indent_handlebars": true, // e.g. {{#foo}}, {{/foo}}
+    "indent_size": 1
+  },
+  "css": {
+    "end_with_newline": true,
+    "indent_char": "\t",
+    "indent_size": 1
+  },
+  "js": {
+    "end_with_newline": true,
+    "indent_with_tabs": true
+  }
+}
