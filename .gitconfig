@@ -1,7 +1,7 @@
 [user]
 	email = marcelo.schmidt@gmail.com
 	name = Marcelo Schmidt
-	signingkey = 7B66097E
+	signingkey = D374E6A1B5523454
 
 [core]
 	editor = vim
