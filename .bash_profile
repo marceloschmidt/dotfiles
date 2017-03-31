@@ -20,6 +20,7 @@ shopt -s cdspell;
 
 # bind '"[A":history-search-backward'
 # bind '"[B":history-search-forward'
+bind '\C-w:unix-filename-rubout'
 
 # Enable some Bash 4 features when possible:
 # * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
