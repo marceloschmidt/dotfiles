@@ -68,8 +68,9 @@ alias docker-setup='eval "$(docker-machine env default)"'
 alias tdbdev='ssh -f -L 27018:localhost:27017 -N root@dev-my.konecty.com -q'
 alias tdbprod='ssh -f -L 27019:localhost:27017 -N root@001-db.konecty.com -q'
 alias tdbrocket='ssh -f -L 27020:localhost:27017 -N root@rocket.chat -q'
-alias tdbcloud='ssh -f -L 27021:localhost:27017 -N root@35.185.55.102 -q'
-alias tdbcommunity='ssh -f -L 27022:localhost:27017 -N root@67.205.154.173 -q'
+alias tdbcloud='ssh -f -L 27021:localhost:27017 -N marcelo.schmidt@35.185.55.102 -q'
+alias tdbcommunity='ssh -f -L 27022:localhost:27017 -N marcelo.schmidt@open-db1.rocket.chat -q'
+alias telastic='ssh -f -L 9200:localhost:9200 -N marcelo.schmidt@104.154.167.74 -q'
 alias tunnels='tdbdev && tdbprod && tdbrocket && tdbcloud && tdbcommunity'
 
 # Quick access
@@ -79,9 +80,11 @@ alias demo='ssh rocketchat@demo.rocket.chat -t '\''cd /var/www/rocket.chat; bash
 alias community='ssh root@67.205.154.173'
 alias dev='ssh root@dev-my.konecty.com'
 alias prod='ssh root@001-db.konecty.com'
-alias rocket='ssh root@rocket.chat -t '\''cd /var/www/rocket.chat/current; bash'\'''
+alias rocket='ssh root@rocket.chat -t '\''cd /var/www/rocket.chat.website.react/current; bash'\'''
 alias sites='ssh root@001-sites.konecty.com -t '\''cd /var/www/vhosts; bash'\'''
-alias cloud='ssh root@35.185.55.102'
+alias clouddb='ssh marcelo.schmidt@35.185.55.102'
+alias cloud='ssh marcelo.schmidt@35.185.57.182'
+alias metrics='ssh marcelo.schmidt@104.154.167.74'
 
 # Apps
 alias chrome-clean='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-extensions'

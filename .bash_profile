@@ -111,3 +111,5 @@ fi
 
 # Add my ssh-key to keychain
 ssh-add -K ~/.ssh/id_rsa &>/dev/null
+
+ulimit -n 65536 65536
