@@ -1,13 +1,13 @@
 [user]
 	email = marcelo.schmidt@gmail.com
 	name = Marcelo Schmidt
-	signingkey = 7B66097E
+	signingkey = CA48C21A7B66097E
 
 [commit]
 	gpgsign = true
 
 [gpg]
-	program = /usr/local/bin/gpg_wrap
+	program = /usr/local/MacGPG2/bin/gpg2
 
 [alias]
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
